@@ -26,19 +26,26 @@ I focus on building **air-gapped, zero-telemetry AI systems** and **high-through
 - **Solution:** Hybrid architecture combining Tree-sitter call-graph mapping with deterministic AST pre/post-filters to guarantee 100% false-positive rejection on framework safe zones while preserving critical security sinks (SQLi, command injection).
 - **Stack:** Python, Tree-Sitter, AST, Pydantic, Git Notes synchronization, Local LLMs (Ollama / vLLM).
 
-### 2. [YOLO Vehicle Speed & Flow Tracking](https://github.com/shameel0505/YOLO-Vehicle-Speed-Tracker)
+### 2. [MicroAgent: Local ReAct Autonomous Agent Runtime](https://github.com/shameel0505/MicroAgent)
+*Modular Autonomous Agent Framework Optimized for Small-Parameter Coder Models (7B-9B).*
+- **Problem:** Standard ReAct loops degrade rapidly when running on 7B models due to context window saturation and reasoning loops.
+- **Solution:** Observation offloading (caching outputs > 3,000 chars to disk and injecting indexed pointers), sliding-window context pruning ($K=8$), anti-repetition state heuristics, and sandboxed subprocess code execution.
+- **Deliverables Case Study:** Includes full multi-step autonomous execution traces creating formatted Excel workbooks (`openpyxl`) and PowerPoint slide decks (`python-pptx`).
+- **Stack:** Python, Qwen 2.5 Coder 7B, Ollama, Rich, DuckDuckGo Search, OpenPyXL, Python-PPTX.
+
+### 3. [YOLO Vehicle Speed & Flow Tracking](https://github.com/shameel0505/YOLO-Vehicle-Speed-Tracker)
 *Real-Time Edge Computer Vision for Calibrated Velocity Estimation & Traffic Flow Modeling.*
 - **Problem:** Naive Euclidean velocity tracking in surveillance footage distorts speeds due to inference latency and acute perspective compression.
-- **Solution:** Frame-index synchronized velocity measurement ($v = \frac{d \cdot \text{FPS}}{\Delta \text{frames}}$) combined with planar projective geometry and multi-object tracking (ByteTrack / BoT-SORT).
-- **Stack:** Ultralytics YOLOv8 / YOLO11, OpenCV, NumPy, Pytest unit-tested physics engine.
+- **Solution:** Frame-index synchronized velocity measurement ($v = \frac{d \cdot \text{FPS}}{\Delta \text{frames}}$) combined with planar projective geometry and multi-object tracking (ByteTrack / BoT-SORT). Tested with 5/5 unit tests.
+- **Stack:** Ultralytics YOLOv8 / YOLO11, OpenCV, NumPy, Pytest.
 
-### 3. [GPT-Lite: Zero-Telemetry Local LLM Assistant](https://github.com/shameel0505/gpt-lite-local-chatbot)
+### 4. [GPT-Lite: Zero-Telemetry Local LLM Assistant](https://github.com/shameel0505/gpt-lite-local-chatbot)
 *Production-Grade Air-Gapped Conversational Interface.*
 - **Problem:** Cloud AI services introduce data exfiltration risks and recurring API costs for everyday development.
 - **Solution:** Low-footprint, memory-mapped local inference UI with `@st.cache_resource` weight persistence, dynamic context window pruning, and native XSS-sanitized chat components.
 - **Stack:** Streamlit, GPT4All (GGML/llama.cpp runtime), 4-bit Quantization (Mistral 7B / Llama 3 8B).
 
-### 4. [Automated Multi-Modal Content Pipeline](https://github.com/shameel0505/news_project)
+### 5. [Automated Multi-Modal Content Pipeline](https://github.com/shameel0505/news_project)
 *End-to-End News Aggregation, Typography Compositing & Social Publishing.*
 - **Problem:** Automating daily high-volume content production requires strict deduplication, WCAG contrast compliance, and durable session handling without triggering anti-bot protections.
 - **Solution:** Multi-source ingestion (Brave Search API + RSS), SHA-fingerprinted deduplication, automated dynamic typography rendering via Pillow, and rate-limited dispatch with exponential backoff.
