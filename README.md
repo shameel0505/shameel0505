@@ -1,6 +1,6 @@
 # Mohamed Shameel
 
-**Senior AI Systems Engineer & Automation Architect**  
+**AI Systems & Automation Engineer**  
 *Building deterministic edge-AI systems, local inference runtimes, and resilient automation pipelines.*
 
 [![GitHub](https://img.shields.io/badge/GitHub-shameel0505-181717?style=flat&logo=github)](https://github.com/shameel0505)
@@ -10,15 +10,15 @@
 
 ---
 
-## 🏛️ Engineering Philosophy
+## 🏛️ Engineering Approach
 
-> *"Seniority is not measured by lines of code or buzzword density, but by architectural judgment: understanding failure domains, eliminating false-positives deterministically, minimizing compute footprints, and building software that runs reliably in production without cloud dependencies."*
+> *"Good engineering isn't about buzzwords or bloated code—it's about understanding failure domains, eliminating false-positives deterministically, minimizing compute footprints, and building software that runs reliably in production without cloud dependencies."*
 
-I specialize in building **air-gapped, zero-telemetry AI systems** and **high-throughput automation pipelines**. My focus centers on small-to-midsize model quantization (GGUF/GGML), Abstract Syntax Tree (AST) guardrails, edge computer vision, and robust distributed ETL architectures.
+I focus on building **air-gapped, zero-telemetry AI systems** and **high-throughput automation pipelines**. My core work centers on small-to-midsize model quantization (GGUF/GGML), Abstract Syntax Tree (AST) guardrails, edge computer vision, and robust distributed ETL architectures.
 
 ---
 
-## 🚀 Featured Engineering Systems
+## 🚀 Featured Systems
 
 ### 1. [Aegis: Air-Gapped Semantic Code Review Engine](https://github.com/shameel0505/aegis)
 *Local AI Code Review & Static Analysis Engine with Deterministic AST Guardrails.*
@@ -34,7 +34,7 @@ I specialize in building **air-gapped, zero-telemetry AI systems** and **high-th
 
 ### 3. [GPT-Lite: Zero-Telemetry Local LLM Assistant](https://github.com/shameel0505/gpt-lite-local-chatbot)
 *Production-Grade Air-Gapped Conversational Interface.*
-- **Problem:** Cloud AI services introduce data exfiltration risks and high API recurring costs for everyday development.
+- **Problem:** Cloud AI services introduce data exfiltration risks and recurring API costs for everyday development.
 - **Solution:** Low-footprint, memory-mapped local inference UI with `@st.cache_resource` weight persistence, dynamic context window pruning, and native XSS-sanitized chat components.
 - **Stack:** Streamlit, GPT4All (GGML/llama.cpp runtime), 4-bit Quantization (Mistral 7B / Llama 3 8B).
 
@@ -48,7 +48,7 @@ I specialize in building **air-gapped, zero-telemetry AI systems** and **high-th
 
 ## 🛠️ Technical Competencies
 
-- **Languages & Core:** Python (Fluent: AsyncIO, Metaprogramming, CPython internals), SQL, Shell (Bash/Zsh).
+- **Languages & Core:** Python (AsyncIO, Metaprogramming, CPython internals), SQL, Shell (Bash/Zsh).
 - **AI & Deep Learning:** Quantized Local Inference (GGUF, GGML, Ollama), Computer Vision (YOLOv8/11, OpenCV, ByteTrack), PyTorch, Tree-sitter & AST Static Analysis.
 - **System Design & Automation:** Resilient ETL Pipelines, Multi-Threading, Headless Automation, Rate-Limiting & Backoff Strategies.
 - **Engineering Quality:** Test-Driven Development (`pytest`), Code Health (`ruff`, `mypy`), CI/CD (GitHub Actions), Docker, Semantic Git Workflows.
@@ -58,4 +58,4 @@ I specialize in building **air-gapped, zero-telemetry AI systems** and **high-th
 ## 📬 Contact & Collaboration
 
 - **GitHub:** [@shameel0505](https://github.com/shameel0505)
-- **Primary Focus:** High-impact AI infrastructure, edge inference, and mission-critical automation systems.
+- **Primary Focus:** Edge AI inference, computer vision, and mission-critical automation systems.
